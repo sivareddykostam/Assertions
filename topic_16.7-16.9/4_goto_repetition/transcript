@@ -1,0 +1,97 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 22:08:57 on Oct 16,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /pdtools/work_area/frontend/sahana/assertions/4_goto_repetition/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Error: Assertion failed
+#    Time: 0 ns Started: 0 ns  Scope: top.S1 File: file.sv Line: 31
+#                    0clk = 0, a = x, b = x c = x
+# ** Error: Assertion failed
+#    Time: 1 ns Started: 1 ns  Scope: top.S1 File: file.sv Line: 31
+#                    1clk = 1, a = 1, b = 1 c = 1
+#                    2clk = 0, a = 1, b = 0 c = 0
+#                    3clk = 1, a = 1, b = 0 c = 0
+#                    4clk = 0, a = 1, b = 0 c = 0
+#                    5clk = 1, a = 0, b = 0 c = 0
+# ** Error: Assertion failed
+#    Time: 6 ns Started: 6 ns  Scope: top.S1 File: file.sv Line: 31
+#                    6clk = 0, a = 1, b = 1 c = 1
+#                    7clk = 1, a = 1, b = 1 c = 0
+#                    8clk = 0, a = 1, b = 0 c = 0
+#                    9clk = 1, a = 0, b = 0 c = 0
+# ** Error: Assertion failed
+#    Time: 10 ns Started: 10 ns  Scope: top.S1 File: file.sv Line: 31
+#                   10clk = 0, a = 0, b = 0 c = 1
+# ** Error: Assertion failed
+#    Time: 11 ns Started: 11 ns  Scope: top.S1 File: file.sv Line: 31
+#                   11clk = 1, a = 0, b = 0 c = 0
+# ** Error: Assertion failed
+#    Time: 12 ns Started: 12 ns  Scope: top.S1 File: file.sv Line: 31
+#                   12clk = 0, a = 0, b = 1 c = 1
+# ** Error: Assertion failed
+#    Time: 13 ns Started: 13 ns  Scope: top.S1 File: file.sv Line: 31
+#                   13clk = 1, a = 0, b = 0 c = 1
+# ** Error: Assertion failed
+#    Time: 14 ns Started: 14 ns  Scope: top.S1 File: file.sv Line: 31
+#                   14clk = 0, a = 0, b = 1 c = 0
+# ** Error: Assertion failed
+#    Time: 15 ns Started: 15 ns  Scope: top.S1 File: file.sv Line: 31
+#                   15clk = 1, a = 1, b = 0 c = 0
+#                   16clk = 0, a = 1, b = 0 c = 1
+#                   17clk = 1, a = 1, b = 1 c = 0
+#                   18clk = 0, a = 1, b = 1 c = 0
+#                   19clk = 1, a = 0, b = 0 c = 0
+# ** Error: Assertion failed
+#    Time: 20 ns Started: 20 ns  Scope: top.S1 File: file.sv Line: 31
+#                   20clk = 0, a = 1, b = 1 c = 1
+#                   21clk = 1, a = 1, b = 1 c = 0
+# ** Error: Assertion failed
+#    Time: 22 ns Started: 7 ns  Scope: top.S1 File: file.sv Line: 31
+#                   22clk = 0, a = 0, b = 1 c = 1
+# ** Error: Assertion failed
+#    Time: 23 ns Started: 23 ns  Scope: top.S1 File: file.sv Line: 31
+#                   23clk = 1, a = 1, b = 1 c = 0
+#                   24clk = 0, a = 1, b = 0 c = 0
+#                   25clk = 1, a = 1, b = 0 c = 1
+#                   26clk = 0, a = 1, b = 0 c = 0
+#                   27clk = 1, a = 1, b = 1 c = 1
+#                   28clk = 0, a = 0, b = 1 c = 0
+# ** Error: Assertion failed
+#    Time: 29 ns Started: 29 ns  Scope: top.S1 File: file.sv Line: 31
+#                   29clk = 1, a = 1, b = 1 c = 1
+#                   30clk = 0, a = 1, b = 1 c = 1
+#                   31clk = 1, a = 1, b = 1 c = 0
+#                   32clk = 0, a = 1, b = 0 c = 0
+#                   33clk = 1, a = 1, b = 0 c = 0
+#                   34clk = 0, a = 1, b = 0 c = 0
+#                   35clk = 1, a = 1, b = 1 c = 0
+#                   36clk = 0, a = 1, b = 0 c = 1
+#                   37clk = 1, a = 0, b = 1 c = 0
+# ** Error: Assertion failed
+#    Time: 38 ns Started: 38 ns  Scope: top.S1 File: file.sv Line: 31
+#                   38clk = 0, a = 0, b = 1 c = 1
+# ** Error: Assertion failed
+#    Time: 39 ns Started: 39 ns  Scope: top.S1 File: file.sv Line: 31
+#                   39clk = 1, a = 0, b = 1 c = 0
+# ** Note: $finish    : file.sv(35)
+#    Time: 40 ns  Iteration: 0  Instance: /top
+# End time: 22:08:59 on Oct 16,2021, Elapsed time: 0:00:02
+# Errors: 15, Warnings: 1

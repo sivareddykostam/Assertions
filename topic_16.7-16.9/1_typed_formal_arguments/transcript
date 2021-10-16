@@ -1,0 +1,175 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 22:02:07 on Oct 16,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /pdtools/work_area/frontend/sahana/assertions/1_typed_formal_arguments/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Error: Assertion failed for sequence-2
+#    Time: 0 ns Started: 0 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 0 ns Started: 0 ns  Scope: top.S1 File: file.sv Line: 36
+#                    0clk = 0, a = x, b = 0x c = x, e = x
+# ** Error: Assertion failed for sequence-2
+#    Time: 1 ns Started: 1 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 1 ns Started: 1 ns  Scope: top.S1 File: file.sv Line: 36
+#                    1clk = 1, a = 0, b = 01 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 2 ns Started: 2 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 2 ns Started: 2 ns  Scope: top.S1 File: file.sv Line: 36
+#                    2clk = 0, a = 1, b = 01 c = 0, e = 0
+#                    3clk = 1, a = 1, b = 01 c = 0, e = 0
+#                    4clk = 0, a = 1, b = 01 c = 0, e = 0
+#                    5clk = 1, a = 1, b = 00 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 6 ns Started: 5 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 6 ns Started: 5 ns  Scope: top.S1 File: file.sv Line: 36
+#                    6clk = 0, a = 0, b = 01 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 7 ns Started: 7 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 7 ns Started: 7 ns  Scope: top.S1 File: file.sv Line: 36
+#                    7clk = 1, a = 0, b = 01 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 8 ns Started: 8 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 8 ns Started: 8 ns  Scope: top.S1 File: file.sv Line: 36
+#                    8clk = 0, a = 0, b = 01 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 9 ns Started: 9 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 9 ns Started: 9 ns  Scope: top.S1 File: file.sv Line: 36
+#                    9clk = 1, a = 0, b = 00 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 10 ns Started: 10 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 10 ns Started: 10 ns  Scope: top.S1 File: file.sv Line: 36
+#                   10clk = 0, a = 1, b = 00 c = 0, e = 1
+#                   11clk = 1, a = 1, b = 00 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 12 ns Started: 11 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 12 ns Started: 11 ns  Scope: top.S1 File: file.sv Line: 36
+#                   12clk = 0, a = 1, b = 00 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 13 ns Started: 12 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 13 ns Started: 12 ns  Scope: top.S1 File: file.sv Line: 36
+#                   13clk = 1, a = 0, b = 00 c = 0, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 14 ns Started: 14 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-2
+#    Time: 14 ns Started: 13 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 14 ns Started: 14 ns  Scope: top.S1 File: file.sv Line: 36
+# ** Error: Assertion failed for sequence-1
+#    Time: 14 ns Started: 13 ns  Scope: top.S1 File: file.sv Line: 36
+#                   14clk = 0, a = 0, b = 00 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 15 ns Started: 15 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 15 ns Started: 15 ns  Scope: top.S1 File: file.sv Line: 36
+#                   15clk = 1, a = 1, b = 01 c = 0, e = 0
+#                   16clk = 0, a = 0, b = 01 c = 0, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 17 ns Started: 17 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 17 ns Started: 17 ns  Scope: top.S1 File: file.sv Line: 36
+#                   17clk = 1, a = 1, b = 01 c = 1, e = 0
+#                   18clk = 0, a = 0, b = 01 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 19 ns Started: 19 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 19 ns Started: 19 ns  Scope: top.S1 File: file.sv Line: 36
+#                   19clk = 1, a = 0, b = 00 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 20 ns Started: 20 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 20 ns Started: 20 ns  Scope: top.S1 File: file.sv Line: 36
+#                   20clk = 0, a = 0, b = 01 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 21 ns Started: 21 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 21 ns Started: 21 ns  Scope: top.S1 File: file.sv Line: 36
+#                   21clk = 1, a = 1, b = 01 c = 1, e = 0
+#                   22clk = 0, a = 0, b = 00 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 23 ns Started: 23 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-2
+#    Time: 23 ns Started: 22 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 23 ns Started: 23 ns  Scope: top.S1 File: file.sv Line: 36
+# ** Error: Assertion failed for sequence-1
+#    Time: 23 ns Started: 22 ns  Scope: top.S1 File: file.sv Line: 36
+#                   23clk = 1, a = 0, b = 01 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 24 ns Started: 24 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 24 ns Started: 24 ns  Scope: top.S1 File: file.sv Line: 36
+#                   24clk = 0, a = 0, b = 01 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 25 ns Started: 25 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 25 ns Started: 25 ns  Scope: top.S1 File: file.sv Line: 36
+#                   25clk = 1, a = 1, b = 01 c = 0, e = 1
+#                   26clk = 0, a = 1, b = 01 c = 0, e = 0
+#                   27clk = 1, a = 1, b = 01 c = 1, e = 1
+#                   28clk = 0, a = 0, b = 00 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 29 ns Started: 29 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-2
+#    Time: 29 ns Started: 28 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 29 ns Started: 29 ns  Scope: top.S1 File: file.sv Line: 36
+# ** Error: Assertion failed for sequence-1
+#    Time: 29 ns Started: 28 ns  Scope: top.S1 File: file.sv Line: 36
+#                   29clk = 1, a = 0, b = 01 c = 1, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 30 ns Started: 30 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 30 ns Started: 30 ns  Scope: top.S1 File: file.sv Line: 36
+#                   30clk = 0, a = 1, b = 01 c = 1, e = 1
+#                   31clk = 1, a = 1, b = 01 c = 1, e = 0
+#                   32clk = 0, a = 1, b = 01 c = 0, e = 0
+#                   33clk = 1, a = 1, b = 01 c = 0, e = 0
+#                   34clk = 0, a = 0, b = 01 c = 0, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 35 ns Started: 35 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 35 ns Started: 35 ns  Scope: top.S1 File: file.sv Line: 36
+#                   35clk = 1, a = 1, b = 01 c = 1, e = 0
+#                   36clk = 0, a = 0, b = 01 c = 0, e = 1
+# ** Error: Assertion failed for sequence-2
+#    Time: 37 ns Started: 37 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 37 ns Started: 37 ns  Scope: top.S1 File: file.sv Line: 36
+#                   37clk = 1, a = 0, b = 00 c = 1, e = 0
+# ** Error: Assertion failed for sequence-2
+#    Time: 38 ns Started: 38 ns  Scope: top.S2 File: file.sv Line: 39
+# ** Error: Assertion failed for sequence-1
+#    Time: 38 ns Started: 38 ns  Scope: top.S1 File: file.sv Line: 36
+#                   38clk = 0, a = 1, b = 00 c = 1, e = 1
+#                   39clk = 1, a = 0, b = 00 c = 1, e = 0
+# ** Note: $finish    : file.sv(43)
+#    Time: 40 ns  Iteration: 0  Instance: /top
+# End time: 22:02:09 on Oct 16,2021, Elapsed time: 0:00:02
+# Errors: 54, Warnings: 1
