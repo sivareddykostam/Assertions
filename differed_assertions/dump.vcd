@@ -1,0 +1,42 @@
+$date
+	Sun Oct 17 19:25:51 2021
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module sva_svtb $end
+
+$scope module tb $end
+$var wire 1 ! clk $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+
+$scope unknown m $end
+$var reg 1 $ b $end
+$var reg 1 % a $end
+$var event 1 & m_event $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1"
+0#
+x$
+x%
+1&
+0!
+$end
+#10
+1#
+#20
+0"
+#35
+0#
+#40
+1"

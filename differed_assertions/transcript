@@ -1,5 +1,5 @@
-# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
-# Start time: 10:49:51 on Oct 17,2021
+# vsim -novopt work.top work.sva_svtb -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 19:25:43 on Oct 17,2021
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -18,13 +18,36 @@
 # Refreshing /pdtools/work_area/frontend/sivareddy_mbytes/Assertions/differed_assertions/work.top
 # Loading sv_std.std
 # Loading work.top
+# Refreshing /pdtools/work_area/frontend/sivareddy_mbytes/Assertions/differed_assertions/work.sva_svtb
+# Loading work.sva_svtb
+# Refreshing /pdtools/work_area/frontend/sivareddy_mbytes/Assertions/differed_assertions/work.tb
+# Loading work.tb
 # log -r /*
+# ** Error: Unable to lock WLF file "waveform.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "waveform.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "waveform.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "waveform.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: waveform.wlf
+#           File in use by: sivareddykostam  Hostname: pdserver.mirafra.com  ProcessID: 1207
+#           Attempting to use alternate WLF file "./wlftu5ZKjs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: waveform.wlf
+#           Using alternate file: ./wlftu5ZKjs
 #  add wave -r /*
 #  run -all
 # Fail
 # Fail
-# 
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
+# Fail
+# Fail
+# Fail
+# Fail
+# Fail
+# Fail
+# Pass
+# Pass
+# Pass
+# Pass
+# ** Note: implicit $finish from program    : file.sv(11)
+#    Time: 40 ns  Iteration: 0  Instance: /sva_svtb/tb
+# End time: 19:25:51 on Oct 17,2021, Elapsed time: 0:00:08
+# Errors: 4, Warnings: 3

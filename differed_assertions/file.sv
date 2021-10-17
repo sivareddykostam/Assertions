@@ -52,7 +52,7 @@ module sva_svtb;
     a2: assert final (!(a & c)) $display("Pass"); else $display("Fail");
   end
   
-  dut dut (.*);
+  top dut (.*);
   tb tb (.*);
 
 endmodule
