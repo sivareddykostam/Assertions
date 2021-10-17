@@ -1,0 +1,103 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 10:46:44 on Oct 17,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /pdtools/work_area/frontend/sivareddy_mbytes/Assertions/calling_subroutines/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Warning: (vsim-PLI-3826) file.sv(44): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#                    0:a=1,b=1,e=1,f=1
+#                    2:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                    4:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                    6:a=1,b=0,e=0,f=1
+#                    8:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+#                   10:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                   12:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                   14:a=1,b=0,e=0,f=1
+#                   16:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+#                   18:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                   20:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                   22:a=1,b=0,e=0,f=1
+#                   24:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+#                   26:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                   28:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                   30:a=1,b=0,e=0,f=1
+#                   32:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+#                   34:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                   36:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                   38:a=1,b=0,e=0,f=1
+#                   40:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+#                   42:a=1,b=1,e=0,f=1
+# b after a with v = 1, w = 1
+# 
+#                   44:a=1,b=1,e=1,f=0
+# b after a with v = 0, w = 0
+# 
+#                   46:a=1,b=0,e=0,f=1
+#                   48:a=1,b=1,e=1,f=1
+# b after a with v = 0, w = 1
+# 
+# b after a with v = 1, w = 1
+# 
+# ** Note: $finish    : file.sv(39)
+#    Time: 50 ns  Iteration: 0  Instance: /top
+# End time: 10:46:46 on Oct 17,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2

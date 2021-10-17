@@ -1,0 +1,54 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 10:38:59 on Oct 17,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /pdtools/work_area/frontend/sivareddy_mbytes/Assertions/concurrent_assertions/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Warning: (vsim-PLI-3826) file.sv(24): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+# [10] a=0,b=0
+# ** Error: Assertion error.
+#    Time: 10 ns Started: 10 ns  Scope: top File: file.sv Line: 19
+# [30] a=0,b=1
+# ** Error: Assertion error.
+#    Time: 30 ns Started: 30 ns  Scope: top File: file.sv Line: 19
+# [50] a=1,b=1
+# [70] a=1,b=1
+# [90] a=1,b=0
+# ** Error: Assertion error.
+#    Time: 90 ns Started: 90 ns  Scope: top File: file.sv Line: 19
+# [110] a=1,b=1
+# [130] a=0,b=1
+# ** Error: Assertion error.
+#    Time: 130 ns Started: 130 ns  Scope: top File: file.sv Line: 19
+# [150] a=1,b=0
+# ** Error: Assertion error.
+#    Time: 150 ns Started: 150 ns  Scope: top File: file.sv Line: 19
+# [170] a=1,b=0
+# ** Error: Assertion error.
+#    Time: 170 ns Started: 170 ns  Scope: top File: file.sv Line: 19
+# [190] a=1,b=0
+# ** Error: Assertion error.
+#    Time: 190 ns Started: 190 ns  Scope: top File: file.sv Line: 19
+# ** Note: $finish    : file.sv(16)
+#    Time: 200 ns  Iteration: 0  Instance: /top
+# End time: 10:39:02 on Oct 17,2021, Elapsed time: 0:00:03
+# Errors: 7, Warnings: 2
