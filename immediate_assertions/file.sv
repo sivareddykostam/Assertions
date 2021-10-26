@@ -14,8 +14,9 @@ module top;
       b=$random();
       c=$random();
     end
-  
-  always@(posedge clk)
+//Assert statement
+
+  /*always@(posedge clk)
     begin
       if(a>5 || b>5)
         begin
@@ -25,11 +26,12 @@ module top;
           else
             $error($time,"Fail");
         end
-    end
+    end*/
   
 //Assume Statement
   
 /*always@(posedge clk)
+
   begin
     if(a>5 || b>5)
       begin
@@ -42,26 +44,23 @@ module top;
   end*/
   
 //Cover statement
-  
-/*always@(posedge clk)
-  begin
-    if(a>5 || b>5)
-      begin
-        $info("Entering assert statement");
-        cover(c<=9) 
-        $info($time,"Pass");
-      end
-  end*/
-  
-initial 
-  begin
-    $monitor($time,"a=%d,b=%d,c=%d",a,b,c);
-    #20 $finish;
+  always@(posedge clk) begin
+    if(a>5 || b>5) begin
+      $info("Entering assert statement");
+      cover(c<=9) 
+      $info($time,"Pass");
+    end
   end
   
-initial
-  begin
-    $dumpvars();
-    $dumpfile("immediate_assertions.vcd");
-  end
-endmodule
+  initial 
+    begin
+      $monitor($time,"a=%d,b=%d,c=%d",a,b,c);
+      #20 $finish;
+    end
+  
+  initial
+    begin
+      $dumpvars();
+      $dumpfile("immediate_assertions.vcd");
+    end
+  endmodule

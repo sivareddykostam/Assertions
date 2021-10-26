@@ -55,4 +55,4 @@ module sva_svtb;
   top dut (.*);
   tb tb (.*);
 
-endmodule
+  endmodule

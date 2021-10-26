@@ -1,5 +1,5 @@
-# vsim -novopt work.top work.sva_svtb -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
-# Start time: 01:18:30 on Oct 26,2021
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 02:07:59 on Oct 26,2021
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -15,29 +15,17 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/differed_assertions/work.top
+# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/boolean_expressions/work.top
 # Loading sv_std.std
 # Loading work.top
-# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/differed_assertions/work.sva_svtb
-# Loading work.sva_svtb
-# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/differed_assertions/work.tb
-# Loading work.tb
 # log -r /*
 #  add wave -r /*
 #  run -all
-# Fail
-# Fail
-# Fail
-# Fail
-# Fail
-# Fail
-# Fail
-# Fail
-# Pass
-# Pass
-# Pass
-# Pass
-# ** Note: implicit $finish from program    : file.sv(11)
-#    Time: 40 ns  Iteration: 0  Instance: /sva_svtb/tb
-# End time: 01:18:31 on Oct 26,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# ** Warning: (vsim-PLI-3826) file.sv(25): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#                    0a=0,b=          x
+# ** Note: $finish    : file.sv(20)
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# End time: 02:08:00 on Oct 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

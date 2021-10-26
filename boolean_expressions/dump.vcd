@@ -1,0 +1,23 @@
+$date
+	Tue Oct 26 02:08:00 2021
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module top $end
+$var reg 1 ! a $end
+$var integer 32 " b $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+bx "
+$end
