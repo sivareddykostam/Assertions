@@ -1,0 +1,230 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 05:24:17 on Oct 28,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/throughout/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Warning: (vsim-PLI-3826) file.sv(42): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#                    0:trdy=0,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 1 ns Started: 1 ns  Scope: top File: file.sv Line: 33
+#                    1:trdy=0,irdy=0,burst_mode=1,m_clk=1
+#                    2:trdy=0,irdy=1,burst_mode=0,m_clk=0
+#                    3:trdy=0,irdy=1,burst_mode=0,m_clk=1
+#                    4:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 5 ns Started: 5 ns  Scope: top File: file.sv Line: 33
+#                    5:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                    6:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 7 ns Started: 7 ns  Scope: top File: file.sv Line: 33
+#                    7:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                    8:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 9 ns Started: 9 ns  Scope: top File: file.sv Line: 33
+#                    9:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   10:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 11 ns Started: 11 ns  Scope: top File: file.sv Line: 33
+#                   11:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   12:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 13 ns Started: 13 ns  Scope: top File: file.sv Line: 33
+#                   13:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   14:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 15 ns Started: 15 ns  Scope: top File: file.sv Line: 33
+#                   15:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   16:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 17 ns Started: 17 ns  Scope: top File: file.sv Line: 33
+#                   17:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   18:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 19 ns Started: 19 ns  Scope: top File: file.sv Line: 33
+# ** Info: assertion passed
+#    Time: 19 ns Started: 3 ns  Scope: top File: file.sv Line: 31
+#                   19:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   20:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 21 ns Started: 21 ns  Scope: top File: file.sv Line: 33
+#                   21:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   22:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 23 ns Started: 23 ns  Scope: top File: file.sv Line: 33
+#                   23:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   24:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 25 ns Started: 25 ns  Scope: top File: file.sv Line: 33
+#                   25:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   26:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 27 ns Started: 27 ns  Scope: top File: file.sv Line: 33
+#                   27:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   28:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 29 ns Started: 29 ns  Scope: top File: file.sv Line: 33
+#                   29:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   30:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 31 ns Started: 31 ns  Scope: top File: file.sv Line: 33
+#                   31:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   32:trdy=0,irdy=0,burst_mode=0,m_clk=0
+# ** Error: out
+#    Time: 33 ns Started: 33 ns  Scope: top File: file.sv Line: 33
+#                   33:trdy=0,irdy=0,burst_mode=0,m_clk=1
+#                   34:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 35 ns Started: 35 ns  Scope: top File: file.sv Line: 33
+#                   35:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   36:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 37 ns Started: 37 ns  Scope: top File: file.sv Line: 33
+#                   37:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   38:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 39 ns Started: 39 ns  Scope: top File: file.sv Line: 33
+#                   39:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   40:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 41 ns Started: 41 ns  Scope: top File: file.sv Line: 33
+#                   41:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   42:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 43 ns Started: 43 ns  Scope: top File: file.sv Line: 33
+#                   43:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   44:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 45 ns Started: 45 ns  Scope: top File: file.sv Line: 33
+#                   45:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   46:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 47 ns Started: 47 ns  Scope: top File: file.sv Line: 33
+#                   47:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   48:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 49 ns Started: 49 ns  Scope: top File: file.sv Line: 33
+#                   49:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   50:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 51 ns Started: 51 ns  Scope: top File: file.sv Line: 33
+#                   51:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   52:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 53 ns Started: 53 ns  Scope: top File: file.sv Line: 33
+#                   53:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   54:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 55 ns Started: 55 ns  Scope: top File: file.sv Line: 33
+#                   55:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   56:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 57 ns Started: 57 ns  Scope: top File: file.sv Line: 33
+#                   57:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   58:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 59 ns Started: 59 ns  Scope: top File: file.sv Line: 33
+#                   59:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   60:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 61 ns Started: 61 ns  Scope: top File: file.sv Line: 33
+#                   61:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   62:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 63 ns Started: 63 ns  Scope: top File: file.sv Line: 33
+#                   63:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   64:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 65 ns Started: 65 ns  Scope: top File: file.sv Line: 33
+#                   65:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   66:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 67 ns Started: 67 ns  Scope: top File: file.sv Line: 33
+#                   67:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   68:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 69 ns Started: 69 ns  Scope: top File: file.sv Line: 33
+#                   69:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   70:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 71 ns Started: 71 ns  Scope: top File: file.sv Line: 33
+#                   71:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   72:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 73 ns Started: 73 ns  Scope: top File: file.sv Line: 33
+#                   73:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   74:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 75 ns Started: 75 ns  Scope: top File: file.sv Line: 33
+#                   75:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   76:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 77 ns Started: 77 ns  Scope: top File: file.sv Line: 33
+#                   77:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   78:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 79 ns Started: 79 ns  Scope: top File: file.sv Line: 33
+#                   79:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   80:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 81 ns Started: 81 ns  Scope: top File: file.sv Line: 33
+#                   81:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   82:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 83 ns Started: 83 ns  Scope: top File: file.sv Line: 33
+#                   83:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   84:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 85 ns Started: 85 ns  Scope: top File: file.sv Line: 33
+#                   85:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   86:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 87 ns Started: 87 ns  Scope: top File: file.sv Line: 33
+#                   87:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   88:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 89 ns Started: 89 ns  Scope: top File: file.sv Line: 33
+#                   89:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   90:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 91 ns Started: 91 ns  Scope: top File: file.sv Line: 33
+#                   91:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   92:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 93 ns Started: 93 ns  Scope: top File: file.sv Line: 33
+#                   93:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   94:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 95 ns Started: 95 ns  Scope: top File: file.sv Line: 33
+#                   95:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   96:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 97 ns Started: 97 ns  Scope: top File: file.sv Line: 33
+#                   97:trdy=1,irdy=0,burst_mode=1,m_clk=1
+#                   98:trdy=1,irdy=0,burst_mode=1,m_clk=0
+# ** Error: out
+#    Time: 99 ns Started: 99 ns  Scope: top File: file.sv Line: 33
+#                   99:trdy=1,irdy=0,burst_mode=1,m_clk=1
+# ** Note: $finish    : file.sv(37)
+#    Time: 100 ns  Iteration: 0  Instance: /top
+# End time: 05:24:19 on Oct 28,2021, Elapsed time: 0:00:02
+# Errors: 49, Warnings: 2

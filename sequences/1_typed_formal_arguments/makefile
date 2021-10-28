@@ -1,5 +1,5 @@
 all:
-	make clean; make compile; make simulate
+	make clean; make compile; make simulate; make waveform
 
 compile:
 	vlib work; vlog -sv file.sv
@@ -9,3 +9,6 @@ simulate:
 
 clean:
 	rm -rf work/ transcript vsim.wlf
+
+waveform:
+	vsim -view waveform.wlf

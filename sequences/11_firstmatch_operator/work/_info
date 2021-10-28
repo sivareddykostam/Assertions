@@ -8,6 +8,15 @@ z2
 !i10f 100
 cModel Technology
 d/pdtools/work_area/frontend/sahana/assertions/9_or_operator
+T_opt
+!s110 1635336682
+V@HFc:8^WBVQkFVCdZg^8I3
+04 3 4 work top fast 0
+=1-000ae431a4f1-617941ea-36509-41c1
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
 vtop
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 VDg1SIo80bB@j0V0VzS_@n1
@@ -30,4 +39,4 @@ OE;L;10.6c;65
 !s90 -sv|file.sv|
 !i113 0
 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+R0

@@ -26,7 +26,7 @@ module top;
     ##1 x==p;
   endsequence : s1
   
-  S1: assert property (@(edge clk) s1(a))
+  S1: assert property (@(posedge clk) s1(a))
       else $error("Assertion failed");
   
   initial begin

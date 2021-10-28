@@ -1,3 +1,6 @@
+# vsim -novopt work.top -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
+# Start time: 21:08:29 on Oct 27,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -12,14 +15,49 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# waveform.wlf opened as dataset "waveform"
-add wave -position insertpoint  \
-waveform:/top/clk
-add wave -position insertpoint  \
-waveform:/top/a
-add wave  \
-waveform:/top/a
-add wave  \
-waveform:/top/b
-add wave waveform:/top/*
-add wave waveform:/top/*
+# Refreshing /hwetools/work_area/frontend/sivareddy/Assertions/immediate_assertions/work.top
+# Loading sv_std.std
+# Loading work.top
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ** Warning: (vsim-PLI-3826) file.sv(64): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#                    0a= 0,b= 0,c= 0
+#                    1a= 4,b= 1,c= 9
+# ** Info: Entering assert statement
+#    Time: 3 ns  Scope: top File: file.sv Line: 49
+#                    3a= 3,b=13,c=13
+#                    5a= 5,b= 2,c= 1
+# ** Info: Entering assert statement
+#    Time: 7 ns  Scope: top File: file.sv Line: 49
+#                    7a=13,b= 6,c=13
+# ** Info: Entering assert statement
+#    Time: 9 ns  Scope: top File: file.sv Line: 49
+# ** Info:                    9Pass
+#    Time: 9 ns  Scope: top File: file.sv Line: 51
+#                    9a=13,b=12,c= 9
+# ** Info: Entering assert statement
+#    Time: 11 ns  Scope: top File: file.sv Line: 49
+#                   11a= 6,b= 5,c=10
+# ** Info: Entering assert statement
+#    Time: 13 ns  Scope: top File: file.sv Line: 49
+# ** Info:                   13Pass
+#    Time: 13 ns  Scope: top File: file.sv Line: 51
+#                   13a= 5,b= 7,c= 2
+# ** Info: Entering assert statement
+#    Time: 15 ns  Scope: top File: file.sv Line: 49
+#                   15a=15,b= 2,c=14
+# ** Info: Entering assert statement
+#    Time: 17 ns  Scope: top File: file.sv Line: 49
+#                   17a= 8,b= 5,c=12
+# ** Info: Entering assert statement
+#    Time: 19 ns  Scope: top File: file.sv Line: 49
+# ** Info:                   19Pass
+#    Time: 19 ns  Scope: top File: file.sv Line: 51
+#                   19a=13,b=13,c= 5
+# ** Note: $finish    : file.sv(58)
+#    Time: 20 ns  Iteration: 0  Instance: /top
+# End time: 21:08:29 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2

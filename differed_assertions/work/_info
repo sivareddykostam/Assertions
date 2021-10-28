@@ -8,72 +8,91 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/hwetools/work_area/frontend/sivareddy/Assertions/differed_assertions
+T_opt
+!s110 1635279650
+ViJ0P]chEYoS4]<lFTSdBA1
+04 3 4 work top fast 0
+=1-000ae431a4f1-61786322-c4ce9-5392
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OE;O;10.6c;65
+R0
+T_opt1
+!s110 1635279696
+Vm6_f]f]WL>Z@2>^hMEo2^1
+04 8 4 work sva_svtb fast 0
+=1-000ae431a4f1-61786350-daeb1-53d3
+R1
+R2
+n@_opt1
+R3
 vsva_svtb
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 C8iliPIn@gWjdUD:Xj3A60
 I?NMV`@ahm]inDZU?kodK^1
-Z3 !s105 file_sv_unit
+Z6 !s105 file_sv_unit
 S1
 R0
-Z4 w1635191294
-Z5 8file.sv
-Z6 Ffile.sv
+Z7 w1635191294
+Z8 8file.sv
+Z9 Ffile.sv
 L0 46
-Z7 OE;L;10.6c;65
-Z8 !s108 1635191303.000000
-Z9 !s107 file.sv|
-Z10 !s90 -sv|file.sv|
+Z10 OE;L;10.6c;65
+Z11 !s108 1635279588.000000
+Z12 !s107 file.sv|
+Z13 !s90 -sv|file.sv|
 !i113 0
-Z11 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z12 tCvgOpt 0
-4tb
-R1
+Z14 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
+4tb
+R4
+R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 D?AXizi^:c4JeoGLXnIc<0
 ILBFQ:iL838nCQfzaz>dkm2
-R3
+R6
 S1
 R0
-R4
-R5
-R6
-L0 15
 R7
 R8
 R9
+L0 15
 R10
-!i113 0
 R11
 R12
-vtop
-R1
+R13
+!i113 0
+R14
 R2
+vtop
+R4
+R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 NGnR=mzBN;i7XI;k8U^K^1
 ILlfaF?DQGOm4kLkkV^[601
-R3
+R6
 S1
 R0
-R4
-R5
-R6
-L0 4
 R7
 R8
 R9
+L0 4
 R10
-!i113 0
 R11
 R12
+R13
+!i113 0
+R14
+R2

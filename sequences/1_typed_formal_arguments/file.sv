@@ -17,7 +17,7 @@ module top;
   end
     
   initial begin
-    repeat (5) 
+    repeat (2) 
     forever begin
       #1;
       {a,b,c,e}=$urandom;
@@ -32,10 +32,10 @@ module top;
     @(e) a ##1 b;
   endsequence : s2
 
-  S1: assert property (@(edge clk) s1(a,b,c))
+  S1: assert property (@(posedge clk) s1(a,b,c))
       else $error ("Assertion failed for sequence-1");   
 
-  S2: assert property (s2(edge clk))
+  S2: assert property (s2(posedge clk))
       else $error ("Assertion failed for sequence-2");   
       
   initial begin

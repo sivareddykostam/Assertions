@@ -14,10 +14,10 @@ module top;
   end
                     
   initial begin
-    repeat (5) 
+    repeat (2) 
     forever begin
-      #1;
-      {a,b}=$urandom;
+     #1;
+     {a,b}=$urandom;
     end
   end
 
@@ -28,7 +28,7 @@ module top;
     a ##delay b[min:max];
   endsequence : s1
     
-  S1: assert property (@(posedge clk) s1 (a,b,1,2,1))
+  S1: assert property (@(posedge clk) s1 (1,1,1,2,1))
       else $error ("Assertion failed");
     
   initial begin

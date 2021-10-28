@@ -8,6 +8,16 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/hwetools/work_area/frontend/sivareddy/Assertions/immediate_assertions
+T_opt
+!s110 1635278164
+VH4gJFb8B1g6fZjzM[3VBk2
+04 3 4 work top fast 0
+=1-000ae431a4f1-61785d54-dfa4c-3838
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
 vtop
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 VDg1SIo80bB@j0V0VzS_@n1
@@ -20,14 +30,14 @@ IQD9KYaE^1AkHPAe[WWAOT3
 !s105 file_sv_unit
 S1
 R0
-w1635194230
+w1635349077
 8file.sv
 Ffile.sv
 L0 4
 OE;L;10.6c;65
-!s108 1635200696.000000
+!s108 1635349103.000000
 !s107 file.sv|
 !s90 -sv|file.sv|
 !i113 0
 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+R1
