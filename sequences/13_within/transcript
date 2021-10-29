@@ -1,0 +1,41 @@
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# waveform.wlf opened as dataset "waveform"
+vsim -voptargs=+acc work.top
+# vsim -voptargs="+acc" work.top 
+# Start time: 21:48:13 on Oct 28,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.top(fast)
+add wave -position insertpoint sim:/top/*
+run -all
+# ** Warning: (vsim-PLI-3826) file.sv(42): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#                    0:a=1,b=1,m_clk=0
+#                    5:a=1,b=0,m_clk=1
+#                   10:a=0,b=1,m_clk=0
+# ** Info: assertion passed
+#    Time: 15 ns Started: 5 ns  Scope: top File: file.sv Line: 30
+#                   15:a=1,b=1,m_clk=1
+#                   16:a=0,b=1,m_clk=1
+#                   20:a=0,b=1,m_clk=0
+#                   25:a=0,b=1,m_clk=1
+# ** Note: $finish    : file.sv(37)
+#    Time: 30 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at file.sv line 37
+# End time: 21:50:09 on Oct 28,2021, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 1

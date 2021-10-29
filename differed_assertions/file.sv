@@ -7,8 +7,8 @@ module top(input logic clk, input logic a, input logic b);
   
   always_ff @(posedge clk)
     c <= b;
-  a1: assert #0 (!(a & c)) $display("Pass"); else $display("Fail");
-  a2: assert final (!(a & c)) $display("Pass"); else $display("Fail");
+    a1: assert #0 (!(a & c)) $display("Pass"); else $display("Fail");
+    a2: assert final (!(a & c)) $display("Pass"); else $display("Fail");
 
 endmodule
 
@@ -21,27 +21,26 @@ program tb(input logic clk, output logic a, output logic b);
     output b;
   endclocking
  
-initial
- begin
-   a = 1;
-   b = 0;
-   #10;
-   b = 1;
-   #5;
-   a = 1;
-   #5 a=0;
-   #5 b=1;
-   #10 b=0;
-   #5 a=1;
- end
+  initial begin
+    a = 1;
+    b = 0;
+    #10;
+    b = 1;
+    #5;
+    a = 1;
+    #5 a=0;
+    #5 b=1;
+    #10 b=0;
+    #5 a=1;
+  end
 
-  initial
-    begin
-      $dumpfile("dump.vcd");
-      $dumpvars(1);
-    end
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(1);
+  end
 
 endprogram
+
 
 module sva_svtb;
   bit clk;
@@ -55,4 +54,4 @@ module sva_svtb;
   top dut (.*);
   tb tb (.*);
 
-  endmodule
+endmodule

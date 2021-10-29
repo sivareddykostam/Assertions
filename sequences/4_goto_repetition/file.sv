@@ -24,7 +24,7 @@ module top;
   end
   
   sequence s1;
-      a ##1 b[->3:6] ##1 c;
+    a ##1 b[->3:6] ##1 c;
   endsequence : s1
   
   S1: assert property (@(edge clk) s1)

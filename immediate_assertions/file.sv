@@ -2,7 +2,7 @@
 // immediate_assertions
 //--------------------------------------------------------------------------------------------
 module top;
-  
+
   bit clk;
   bit [3:0]a,b,c;
   
@@ -14,7 +14,9 @@ module top;
       b=$random();
       c=$random();
     end
-//Assert statement
+    
+    
+  //Assert statement
 
   /*always@(posedge clk)
     begin
@@ -28,32 +30,34 @@ module top;
         end
     end*/
   
-//Assume Statement
-  
-/*always@(posedge clk)
 
-  begin
-    if(a>5 || b>5)
-      begin
-        $info("Entering assert statement");
-        assume(c<=9) 
-          $info($time,"Pass");
-        else
-          $error($time,"Fail");
-      end
-  end*/
+  //Assume Statement
+    
+  /*always@(posedge clk)
   
-//Cover statement
-  always@(posedge clk) begin
-    if(a>5 || b>5) begin
-      $info("Entering assert statement");
-      cover(c<=9) 
-      $info($time,"Pass");
+    begin
+      if(a>5 || b>5)
+        begin
+          $info("Entering assert statement");
+          assume(c<=9) 
+            $info($time,"Pass");
+          else
+            $error($time,"Fail");
+        end
+    end*/
+  
+   
+  //Cover statement
+    always@(posedge clk) begin
+      if(a>5 || b>5) begin
+        $info("Entering assert statement");
+        cover(c<=9) 
+        $info($time,"Pass");
+      end
     end
-  end
   
   initial 
-    begin
+    begin 
       $monitor($time,"a=%d,b=%d,c=%d",a,b,c);
       #20 $finish;
     end
@@ -63,4 +67,4 @@ module top;
       $dumpvars();
       $dumpfile("immediate_assertions.vcd");
     end
-  endmodule
+endmodule

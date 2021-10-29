@@ -16,8 +16,8 @@ module top;
   initial begin
     repeat (2) 
     forever begin
-     #1;
-     {a,b}=$urandom;
+      #1;
+      {a,b}=$urandom;
     end
   end
 
