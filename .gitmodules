@@ -1,0 +1,3 @@
+[submodule "apb_avip"]
+	path = apb_avip
+	url = git@github.com:muneeb-mbytes/apb_avip.git
